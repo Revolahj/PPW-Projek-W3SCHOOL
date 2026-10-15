@@ -1,0 +1,115 @@
+body {
+    /* biar nempel ke pinggir  */
+    margin: 0px;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+}
+
+.table,
+th,
+td {
+    margin: 0px;
+    border: 1px solid black;
+}
+
+th {
+    padding: 20px;
+}
+
+.Main_Content-pasha {
+    width: 60%;
+    padding-top: 16px;
+    padding: 16px 32px 32px;
+}
+
+.share {
+    float: right;
+}
+
+.Rolling_Option-Mufti {
+    width: 20%;
+    vertical-align: top;
+    height: 1px;
+    vertical-align: top;
+    background-color: rgb(221, 224, 227);
+
+}
+
+.Ads-Mufti {
+    width: 20%;
+    background-color: rgb(221, 224, 227);
+}
+
+.search-bar,
+input {
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 20px;
+
+    padding-bottom: 7px;
+}
+
+.search-bar:focus,
+input:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+#search::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 1;
+}
+
+.text-and-button {
+
+    padding-top: 5px;
+    text-align: start;
+    padding-left: 5px;
+    color: rgb(64, 67, 69);
+
+}
+
+.the-button input[type="radio"] {
+    display: none;
+}
+
+.the-button {
+    border-left: 2px solid black;
+    padding: 5px;
+    text-align: start;
+}
+
+.the-button:hover {
+    background-color: rgb(190, 185, 185);
+}
+
+.the-button label {
+    cursor: pointer;
+}
+
+.the-button:has(input[type="radio"]:checked) {
+    border-left: 2px solid green;
+}
+
+.the-button input[type="radio"]:checked+label {
+    font-weight: bold;
+}
+
+.scrolling {
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scrolling::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+}
