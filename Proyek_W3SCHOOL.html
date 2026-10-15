@@ -42,7 +42,9 @@
 
         }
         .Ads-Mufti {
+            vertical-align: top;
             width: 20%;
+            align-items: center;
             background-color: rgb(221, 224, 227);
         }
         .search-bar, input{
@@ -101,6 +103,23 @@
         .scrolling::-webkit-scrollbar-thumb {
             border-radius: 3px;
         }
+        .remove-ads {
+            color: blue;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .remove-ads:hover{
+            cursor: pointer;
+            color: rgb(3, 3, 99);
+        }
+        .remove-ads label {
+            cursor: pointer;
+        }
+        .remove-ads input[type="radio"]{
+            display: none;
+        }
+
+        
         
 
 
@@ -383,6 +402,15 @@
                 <p>Content</p>
             </td>
             <td class="Ads-Mufti">
+                <img src="Screenshot (269).png">
+                <br>
+                <br>
+                <div class="remove-ads">
+                    <input type="radio" name="remove_ads" id="remove_ads" value="ra">
+                    <label for="remove_ads">REMOVE ADS</label> 
+                </div>
+                <br>
+                <img src="Screenshot (271).png">                
                 
             </td>
     
