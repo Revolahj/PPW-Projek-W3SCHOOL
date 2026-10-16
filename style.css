@@ -33,6 +33,10 @@ th {
     float: right;
 }
 
+.page_select {
+    display: flexbox
+}
+
 .Rolling_Option-Mufti {
     width: 20%;
     vertical-align: top;
