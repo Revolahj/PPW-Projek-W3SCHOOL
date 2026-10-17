@@ -5,145 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek W3SCHOOl</title>
 
-    <style>
-        body{
-            /* biar nempel ke pinggir  */
-            margin: 0px;
-        }
-        table{
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
-            border-collapse:collapse ;
-            align-items: center;
-            text-align: center;
-            margin: 0px;
-        }
-        .table, th,td {
-            margin:0px;
-            border: 1px solid black;
-        }
-        th {
-            padding: 20px;
-        }
-        .Main_Content-pasha {
-            width: 60%;
-            padding-top: 16px;
-            padding: 16px 32px 32px;
-        }
-        .share{
-            float:right;
-        }
-        .Rolling_Option-Mufti {
-            width: 20%;
-            vertical-align: top;
-            height: 1px;
-            vertical-align: top;
-            background-color: rgb(221, 224, 227);
+    <link rel="stylesheet" href="style.css">
 
-        }
-        .Ads-Mufti {
-            vertical-align: top;
-            width: 20%;
-            align-items: center;
-            background-color: rgb(221, 224, 227);
-        }
-        .search-bar, input{
-            padding-top: 15px;
-            padding-left: 5px;
-            padding-right: 20px;
-
-            padding-bottom: 7px;
-        }
-        
-        .search-bar:focus, input:focus {
-            outline: none;
-            border: 1px solid black;
-        }
-        #search::placeholder {
-            font-size: 16px;
-            font-weight: normal;
-            opacity: 1;
-        }
-        
-        .text-and-button {
-            font-size: 14px;
-
-            padding-top: 5px;
-            text-align: start;
-            padding-left: 5px;
-            color: rgb(64, 67, 69);
-         
-        }
-        .the-button input[type="radio"]{
-            display: none;
-        }
-        .the-button {
-            border-left: 2px solid black;
-            padding: 5px;
-            text-align: start;
-            cursor: pointer;
-        }
-        .the-button:hover {
-            background-color: rgb(190, 185, 185);
-        }
-        .the-button label {
-            cursor: pointer;
-        }
-        .the-button:has(input[type="radio"]:checked)  {
-            border-left: 2px solid green;
-        }
-        .the-button input[type="radio"]:checked + label {
-            font-weight: bold;
-        }
-        .scrolling {
-            height: 100%;
-            box-sizing: border-box;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-        
-        .scrolling::-webkit-scrollbar-thumb {
-            border-radius: 3px;
-        }
-        .remove-ads {
-            color: blue;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .remove-ads:hover{
-            cursor: pointer;
-            color: rgb(3, 3, 99);
-        }
-        .remove-ads label {
-            cursor: pointer;
-        }
-        .remove-ads input[type="radio"]{
-            display: none;
-        }
-        .between-footer-mc {
-            width: 100%;
-            position: relative;
-            
-        }
-        .between-footer-mc, img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
-        }
-        .form-group {
-          
-            padding: 10px;
-            background-color: red;
-        }
-
-        
-        
-
-
-
-    </style>
 </head>
+
 <body>
     <table>
         <tr>
@@ -153,246 +18,284 @@
             <td class="Rolling_Option-Mufti">
                 <div class="scrolling">
                     <div class="search-bar">
-                    <label for=search></label>
-                    <input type="text" name="search" id="search" placeholder="Search...">
-                    <br>
-                    <br>
-                    <div class="text-and-button">
-                    <h style="font-weight: 200;letter-spacing: 2px;">HOW TO</h>
-                    <div class="the-button">
-                        <input type="radio" id="button1" name="button1" value="button1">
-                        <label for="button1" style="padding-left: 5px;letter-spacing: 1px;">HowTo Home</label>
-                    </div>
-                </div>
-                <br>
-                <div class="text-and-button">
-                    <h style="font-weight: 200;letter-spacing: 2px;">Menus</h>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Icon Bar</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Menu icon</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Accordion</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Tabs</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Vertical Tabs</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Tab Headers</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Full Page Tabs</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Hover Tabs</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Top Navigation</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Responsive Topnav</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Split Navigation</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Navbar with Icons</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Search Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Search Bar</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Fixed Bar</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Side Navigation</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Responsive Sidebar</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Fullscreen Navigation</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Off-Canvas Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Hover Sidenav Buttons</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Sidebar with Icons</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Horizontal Scroll Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Vertical Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Bottom Navigation</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Responsive Bottom Nav</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Bottom Border Nav Links</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Right Aligned Menu Links</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Centered Menu Link</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Equal Width Menu Links</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Fixed Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Slide Down Bar on Scroll</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Hide Navbar on Scroll</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Shrink Navbar on Scroll</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Navbar on Image</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Hover Dropdowns</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Click Dropdowns</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Cascading Dropdowns</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Dropdown in Topnav</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Dropdown in Sidenav</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Resp Navbar Dropdown</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Subnavigation Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Dropup</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Mega Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Mobile Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Curtain Menu</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Collapsed Sidebar</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Collapsed Sidepanel</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Pagination</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Breadcrumbs</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Button Groups</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Vertical Button Group</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Sticky Social Bar</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Pill Navigation</label>
-                    </div>
-                    <div class="the-button">
-                        <input type="radio" id="button2" name="button2" value="button2">
-                        <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Responsive Header</label>
-                    </div>
-                  
+                        <label for=search></label>
+                        <input type="text" name="search" id="search" placeholder="Search...">
+                        <br>
+                        <br>
+                        <div class="text-and-button">
+                            <h style="font-weight: 200;letter-spacing: 2px;">HOW TO</h>
+                            <div class="the-button">
+                                <input type="radio" id="button1" name="button1" value="button1">
+                                <label for="button1" style="padding-left: 5px;letter-spacing: 1px;">HowTo Home</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="text-and-button">
+                            <h style="font-weight: 200;letter-spacing: 2px;">Menus</h>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Icon Bar</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Menu icon</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Accordion</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Tabs</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Vertical
+                                    Tabs</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Tab Headers</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Full Page
+                                    Tabs</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Hover Tabs</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Top
+                                    Navigation</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Responsive
+                                    Topnav</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Split
+                                    Navigation</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Navbar with
+                                    Icons</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Search Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Search Bar</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Fixed Bar</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Side
+                                    Navigation</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Responsive
+                                    Sidebar</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Fullscreen
+                                    Navigation</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Off-Canvas
+                                    Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Hover Sidenav
+                                    Buttons</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Sidebar with
+                                    Icons</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Horizontal Scroll
+                                    Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Vertical
+                                    Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Bottom
+                                    Navigation</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Responsive Bottom
+                                    Nav</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Bottom Border Nav
+                                    Links</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Right Aligned Menu
+                                    Links</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Centered Menu
+                                    Link</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Equal Width Menu
+                                    Links</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Fixed Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Slide Down Bar on
+                                    Scroll</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Hide Navbar on
+                                    Scroll</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Shrink Navbar on
+                                    Scroll</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Navbar on
+                                    Image</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Hover
+                                    Dropdowns</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Click
+                                    Dropdowns</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Cascading
+                                    Dropdowns</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Dropdown in
+                                    Topnav</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Dropdown in
+                                    Sidenav</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Resp Navbar
+                                    Dropdown</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Subnavigation
+                                    Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Dropup</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Mega Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Mobile Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Curtain Menu</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Collapsed
+                                    Sidebar</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Collapsed
+                                    Sidepanel</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Pagination</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Breadcrumbs</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Button
+                                    Groups</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Vertical Button
+                                    Group</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Sticky Social
+                                    Bar</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Pill
+                                    Navigation</label>
+                            </div>
+                            <div class="the-button">
+                                <input type="radio" id="button2" name="button2" value="button2">
+                                <label for="button2" style="padding-left: 5px;letter-spacing: 1px;">Responsive
+                                    Header</label>
+                            </div>
 
-                </div> 
-                  
-           
-                </div>
-                
+
+                        </div>
+
+
+                    </div>
+
             </td>
             <td class="Main_Content-pasha">
-                <div class="share">share</div>
+                <div class="share">SHARE</div>
                 <p>Content</p>
                 <p>Content</p>
                 <p>Content</p>
@@ -433,21 +336,72 @@
                 <br>
                 <div class="remove-ads">
                     <input type="radio" name="remove_ads" id="remove_ads" value="ra">
-                    <label for="remove_ads">REMOVE ADS</label> 
+                    <label for="remove_ads">REMOVE ADS</label>
                 </div>
                 <br>
-                <img src="Screenshot (271).png">                
-                
+                <img src="Screenshot (271).png">
+
             </td>
-    
+
         </tr>
         <tr>
             <td colspan="3">
+
                 <div class="between-footer-mc">
-                    <img src="Pelerina.jpg">
                     
                 
             </div>
+
+                <div class="advb">
+
+                    <!-- WORLD -->
+                    <span class="advb-field"></span>
+                    <span class="advb-road advb-road-top"></span>
+                    <span class="advb-road advb-road-mid"></span>
+                    <span class="advb-road advb-road-bot"></span>
+
+                    <div class="advb-stage">
+
+                        <div class="advb-props">
+
+                            <!-- treeline crowding in from the right -->
+                            <img class="advb-prop" src="/adventure/img/map/oakTree.webp" alt=""
+                                style="right:24px;bottom:150px">
+                            <img class="advb-prop -tall" src="/adventure/img/map/birchTree.webp" alt=""
+                                style="right:92px;bottom:158px">
+                            <img class="advb-prop" src="/adventure/img/map/oakTree.webp" alt=""
+                                style="right:166px;bottom:138px">
+                            <img class="advb-prop" src="/adventure/img/map/birchTree.webp" alt=""
+                                style="right:236px;bottom:78px">
+                            <img class="advb-prop" src="/adventure/img/map/oakTree.webp" alt=""
+                                style="right:310px;bottom:112px">
+                            <img class="advb-prop" src="/adventure/img/map/bush.webp" alt=""
+                                style="right:390px;bottom:100px">
+
+                            <!-- clutter along the lower grass lip -->
+                            <img class="advb-prop" src="/adventure/img/map/leaf.png" alt=""
+                                style="right:612px;bottom:36px">
+                            <img class="advb-prop" src="/adventure/img/map/oakTreeLog.webp" alt=""
+                                style="right:560px;bottom:10px">
+                            <img class="advb-prop" src="/adventure/img/map/leaf.png" alt=""
+                                style="right:500px;bottom:16px">
+                            <img class="advb-prop" src="/adventure/img/map/stone.webp" alt=""
+                                style="right:430px;bottom:10px">
+                            <img class="advb-prop" src="/adventure/img/map/mushroom.png" alt=""
+                                style="right:370px;bottom:20px">
+                            <img class="advb-prop" src="/adventure/img/map/oakTreeLog.webp" alt=""
+                                style="right:300px;bottom:14px">
+                            <img class="advb-prop" src="/adventure/img/map/mushroom.png" alt=""
+                                style="right:176px;bottom:10px">
+                            <img class="advb-prop" src="/adventure/img/map/leaf.png" alt=""
+                                style="right:120px;bottom:18px">
+                            <img class="advb-prop" src="/adventure/img/map/stone.webp" alt=""
+                                style="right:74px;bottom:12px">
+
+                        </div>
+                    </div>
+                </div>
+
 
             </td>
         </tr>
@@ -456,9 +410,10 @@
                 <img src="Screenshot (273).png" style="width: 100%;height: 100%;">
             </td>
         </tr>
-      
+
     </table>
 
-    
+
 </body>
+
 </html>
