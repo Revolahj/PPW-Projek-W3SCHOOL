@@ -1,6 +1,8 @@
 body {
     /* biar nempel ke pinggir  */
     margin: 0px;
+    background-color: #1d2a35;
+    color: #ddd;
 }
 
 table {
@@ -28,10 +30,19 @@ th {
     width: 60%;
     padding-top: 16px;
     padding: 16px 32px 32px;
+    text-align: left;
 }
 
 .share {
     float: right;
+}
+
+.Main_Content-pasha h1 {
+    font-size: 42px;
+    font-family: "segoe UI", sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: white;
 }
 
 .Rolling_Option-Mufti {
@@ -39,7 +50,7 @@ th {
     vertical-align: top;
     height: 1px;
     vertical-align: top;
-    background-color: rgb(221, 224, 227);
+    background-color: #1d2a35;
 
 }
 
@@ -73,11 +84,9 @@ input:focus {
 
 .text-and-button {
     font-size: 14px;
-
     padding-top: 5px;
     text-align: start;
     padding-left: 5px;
-    color: rgb(64, 67, 69);
 
 }
 
@@ -93,7 +102,7 @@ input:focus {
 }
 
 .the-button:hover {
-    background-color: rgb(190, 185, 185);
+    background-color: rgb(56, 68, 77);
 }
 
 .the-button label {
@@ -157,7 +166,7 @@ input:focus {
 .advb,
 .advb * {
     box-sizing: border-box;
-    
+
 }
 
 .advb-field {
@@ -170,7 +179,7 @@ input:focus {
 
     pointer-events: none;
     image-rendering: pixelated;
-    
+
     background: url(/footer/image/grass.webp) repeat;
     background-size: 32px 32px;
 }
@@ -208,12 +217,16 @@ input:focus {
     z-index: 1;
     background-image: url(/footer/image/roadEdgeBottom.webp);
 }
+
 .advb {
-    position: relative; 
+    position: relative;
 }
-.between-footer-mc, .advb {
-    position: relative; 
+
+.between-footer-mc,
+.advb {
+    position: relative;
 }
+
 .overlay-form {
     position: absolute;
     background-color: white;
@@ -221,16 +234,17 @@ input:focus {
     padding: 20px;
     padding-left: 10px;
     width: fit-content;
-    border:1px solid black ;
+    border: 1px solid black;
     border-radius: 10px;
     z-index: 1;
 }
+
 .progress {
     background-color: rgb(223, 218, 218);
     padding: 2px;
-    border: 1px solid rgb(223, 218, 218) ;
+    border: 1px solid rgb(223, 218, 218);
     border-radius: 2px;
-    
+
 
 
 }
