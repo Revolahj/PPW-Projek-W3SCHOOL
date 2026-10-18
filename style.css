@@ -16,7 +16,7 @@ table {
 th,
 td {
     margin: 0px;
-    border: 1px solid black;
+
 }
 
 th {
@@ -221,16 +221,42 @@ input:focus {
     padding: 20px;
     padding-left: 10px;
     width: fit-content;
-    border:1px solid black ;
     border-radius: 10px;
     z-index: 1;
 }
-.progress {
-    background-color: rgb(223, 218, 218);
-    padding: 2px;
-    border: 1px solid rgb(223, 218, 218) ;
-    border-radius: 2px;
+.progress-akun{
+   width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    background-color: rgb(206, 215, 223);
+    margin-top: 10px;
+}
+table.progress-akun td {
+    text-align: left !important; 
+    padding: 10px 15px; /* Jarak atas-bawah 10px, kiri-kanan 15px */
+    border: none; /* Menghilangkan border bawaan tabel layout utama */
+    border-bottom: 1px solid rgb(71, 72, 73);
+}
+.sign-in {
+    font-weight: bolder;
+    background-color: rgb(95, 165, 95);
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sign-in input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+.sign-in label {
+    cursor: pointer;
     
-
+}
+.sign-in:hover {
+    background-color:  rgb(70, 130, 70);
+    transform: translateY(-3px);
 
 }
+
