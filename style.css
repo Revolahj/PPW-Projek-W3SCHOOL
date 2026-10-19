@@ -352,6 +352,7 @@ table.progress-akun td{
     font-weight: 400;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 5px;
 }
 .sign-in input[type=radio] {
     display: none;
@@ -359,6 +360,7 @@ table.progress-akun td{
 }
 .sign-in label {
     cursor: pointer;
+
 }
 .sign-in:hover {
     cursor: pointer;
