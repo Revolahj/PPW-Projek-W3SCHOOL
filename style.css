@@ -25,6 +25,223 @@ th {
     padding: 20px;
 }
 
+.top-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    width: 100%;
+    min-height: 64px;
+    padding: 10px 24px;
+
+    background-color: #0f1923;
+    border-bottom: 1px solid #354451;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Logo */
+
+.navbar-logo {
+    flex-shrink: 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.navbar-logo span {
+    color: #04aa6d;
+}
+
+/* Menu navigasi */
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+}
+
+.nav-link {
+    display: block;
+    padding: 11px 13px;
+
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: #384957;
+}
+
+.nav-link.active {
+    background-color: #04aa6d;
+    color: #ffffff;
+}
+
+/* Search bar */
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    flex-shrink: 0;
+
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.navbar-search:focus-within {
+    outline: 2px solid #04aa6d;
+    outline-offset: 2px;
+}
+
+.navbar-search input {
+    min-width: 0;
+    width: 100%;
+    padding: 9px 12px;
+
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #222222;
+    font-size: 14px;
+}
+
+.navbar-search button {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 36px;
+    padding: 8px;
+
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.navbar-search button:hover {
+    background-color: #e7f3ed;
+}
+
+.navbar-search svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: #333333;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+/* Tombol hamburger untuk HP */
+
+.navbar-toggle {
+    display: none;
+    width: 42px;
+    height: 40px;
+    padding: 9px;
+
+    flex-shrink: 0;
+    border: 1px solid #52606b;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+    display: block;
+    height: 2px;
+    margin: 4px 0;
+    background-color: #ffffff;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .top-navbar {
+        gap: 14px;
+        padding: 10px 16px;
+    }
+
+    .navbar-logo {
+        font-size: 22px;
+    }
+
+    .navbar-menu {
+        gap: 0;
+    }
+
+    .nav-link {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    .navbar-search {
+        width: 155px;
+    }
+}
+
+/* HP */
+
+@media (max-width: 650px) {
+    .top-navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .navbar-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navbar-menu {
+        display: none;
+        order: 3;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar-menu.open {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .navbar-search {
+        order: 2;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .navbar-toggle {
+        order: 1;
+    }
+
+    .navbar-logo {
+        order: 0;
+    }
+}
+
 .Main_Content-pasha {
     background-color: #1d2a35;
     width: 60%;
@@ -396,4 +613,449 @@ table.progress-akun td {
 .sign-in:hover {
     cursor: pointer;
     transform: translateY(-4px);
+}
+
+.LFIN {
+    display: flex;
+    background-color: #ddd;
+    padding: 2px;
+}
+
+.LFIN-btn {
+    padding: 10px;
+    background-color: gray;
+    cursor: pointer;
+
+}
+
+.LFIN-btn input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+
+.LFIN-btn:hover {
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
+/* Wadah pembungkus flex tanpa jarak */
+.LFIN-write-group {
+    margin-left: auto;
+    display: flex;
+    gap: 0;
+    /* Memastikan tidak ada jeda di antara kedua input */
+}
+
+/* Style dasar untuk kedua input */
+.LFIN-write-group input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    field-sizing: content;
+}
+
+/* Input Kiri (Username): Hilangkan lengkungan di sudut kanan */
+.LFIN-write-group .input-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Input Kanan (Password): Hilangkan garis border kiri & lengkungan di sudut kiri */
+.LFIN-write-group .input-right {
+    border-left: none;
+    /* Biar bordernya enggak dobel/tebal di tengah */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Efek saat diklik (Focus) agar border warna biru keluar dengan rapi */
+.LFIN-write-group input:focus {
+    border-color: #2196F3;
+    z-index: 1;
+    /* Supaya border focus tidak tertutup input sebelahnya */
+}
+
+.LFIN-btn-login {
+    margin-left: auto;
+}
+
+.LFIN-write-group {
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+
+/* Style umum untuk input dan button */
+/* 1. Gabungkan style dasar biar ukuran tinggi & padding-nya persis sama */
+.LFIN-write-group input,
+.LFIN-write-group button {
+    padding: 10px;
+    font-size: 14px;
+    /* Disamakan font-size-nya */
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid black;
+    /* Menyamakan border biar gak selisih 1-2px */
+    height: 40px;
+    /* Kunci tinggi yang sama persis */
+}
+
+/* 2. Khusus atribut tombol */
+.LFIN-write-group button {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border-left: none;
+    /* Biar garis border-nya gak dobel sama input password */
+}
+
+/* 3. Efek Hover Tombol */
+.LFIN-write-group button:hover {
+    background-color: green;
+}
+
+.FN {
+    text-align: left;
+
+    display: flex;
+    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    /* Tengah secara vertikal */
+    justify-content: center;
+}
+
+.FN-BTN {
+    background-color: black;
+    padding: 10px;
+
+
+}
+
+.FN-BTN input[type="radio"] {
+    display: none;
+}
+
+.FN-BTN label {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.FN-BTN:hover {
+    background-color: white;
+    color: black;
+}
+
+.RTN {
+    background-color: black;
+    display: flex;
+}
+
+.RTN-BTN {
+    background-color: black;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.RTN-BTN input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+
+.RTN-BTN label {
+    cursor: pointer;
+}
+
+.RTN-BTN:hover {
+    background-color: white;
+    color: black;
+}
+
+.TN {
+    background-color: black;
+    display: flex;
+}
+
+.TN-BTN {
+    background-color: black;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.TN-BTN input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+
+.TN-BTN label {
+    cursor: pointer;
+}
+
+.TN-BTN:hover {
+    background-color: white;
+    color: black;
+}
+
+.OB {
+    display: flex;
+    gap: 10px;
+}
+
+/* ================= TOMBOL HIJAU ================= */
+.OB-BTN-GRN {
+    padding: 10px 20px;
+    /* Padding cukup di tombolnya saja */
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.OB-BTN-GRN input[type="radio"] {
+    display: none;
+}
+
+.OB-BTN-GRN label {
+    font-size: 20px;
+    cursor: pointer;
+    /* Hapus padding 20px di sini biar gak numpuk */
+}
+
+.OB-BTN-GRN:hover {
+    background-color: green;
+    color: white;
+}
+
+/* ================= TOMBOL BIRU ================= */
+.OB-BTN-BLUE {
+    padding: 10px 20px;
+    color: #2196F3;
+    /* Benerin warna teks jadi biru */
+    border: 1px solid #2196F3;
+    /* Benerin border jadi biru */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.OB-BTN-BLUE input[type="radio"] {
+    display: none;
+}
+
+.OB-BTN-BLUE label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.OB-BTN-BLUE:hover {
+    background-color: #2196F3;
+    /* Benerin hover jadi biru */
+    color: white;
+}
+
+.OB-BTN-YELLOW {
+    padding: 20px;
+    color: orange;
+    cursor: pointer;
+    border: 1px solid orange;
+}
+
+.OB-BTN-YELLOW input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+
+.OB-BTN-YELLOW label {
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.OB-BTN-YELLOW:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* RED / DANGER */
+.OB-BTN-RED {
+    padding: 20px;
+    color: red;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+.OB-BTN-RED input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+
+.OB-BTN-RED label {
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.OB-BTN-RED:hover {
+    background-color: red;
+    color: white;
+}
+
+/* DEFAULT */
+.OB-BTN-DFT {
+    padding: 20px;
+    color: gray;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.OB-BTN-DFT input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+
+.OB-BTN-DFT label {
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.OB-BTN-DFT:hover {
+    background-color: gray;
+    color: white;
+}
+
+.AB {
+    display: flex;
+    gap: 10px;
+}
+
+/* ================= 1. GREEN / SUCCESS ================= */
+.AB-BTN-GRN {
+    padding: 10px 20px;
+    color: white;
+    background-color: #04aa6d;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AB-BTN-GRN input[type="radio"] {
+    display: none;
+}
+
+.AB-BTN-GRN label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.AB-BTN-GRN:hover {
+    background-color: green;
+    color: white;
+}
+
+/* ================= 2. BLUE / INFO ================= */
+.AB-BTN-BLUE {
+    padding: 10px 20px;
+    color: white;
+    background-color: #2e6c9e;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AB-BTN-BLUE input[type="radio"] {
+    display: none;
+}
+
+.AB-BTN-BLUE label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.AB-BTN-BLUE:hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* ================= 3. YELLOW / WARNING ================= */
+.AB-BTN-YELLOW {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(159, 159, 69);
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AB-BTN-YELLOW input[type="radio"] {
+    display: none;
+}
+
+.AB-BTN-YELLOW label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.AB-BTN-YELLOW:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* ================= 4. RED / DANGER ================= */
+.AB-BTN-RED {
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AB-BTN-RED input[type="radio"] {
+    display: none;
+}
+
+.AB-BTN-RED label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.AB-BTN-RED:hover {
+    background-color: red;
+    color: white;
+}
+
+/* ================= 5. DEFAULT ================= */
+.AB-BTN-DFT {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(88, 83, 83);
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AB-BTN-DFT input[type="radio"] {
+    display: none;
+}
+
+.AB-BTN-DFT label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.AB-BTN-DFT:hover {
+    background-color: gray;
+    color: white;
 }
