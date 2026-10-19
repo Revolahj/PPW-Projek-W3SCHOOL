@@ -26,15 +26,11 @@ th {
 }
 
 .Main_Content-pasha {
-    background-color: #38444d;
+    background-color: #1d2a35;
     width: 60%;
     padding-top: 16px;
     padding: 16px 32px 32px;
     text-align: left;
-}
-
-.share {
-    float: right;
 }
 
 .Main_Content-pasha h1 {
@@ -45,12 +41,58 @@ th {
     color: white;
 }
 
+.share {
+    float: right;
+}
+
+.intro {
+    font-size: 17px;
+}
+
+/* consistent headers */
+p {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+hr {
+    margin: 20px -16px;
+}
+
+.contentcontainer {
+    padding: 40px 12px;
+    box-sizing: border-box;
+}
+
+.card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardpad {
+    padding: 0.01em 16px;
+}
+
 .Rolling_Option-Mufti {
     width: 20%;
     vertical-align: top;
     height: 1px;
     vertical-align: top;
-    background-color: #1d2a35;
+    background-color: rgb(21, 32, 43);
 
 }
 
