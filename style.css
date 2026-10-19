@@ -87,6 +87,54 @@ hr {
     padding: 0.01em 16px;
 }
 
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.a111 {
+    margin-top: 16px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 5px 16px;
+    border-radius: 5px;
+}
+
+.a112 {
+    color: #fff;
+    background-color: #2196F3;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    width: 150px;
+}
+
+.btn {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: #04AA6D;
+    color: #ffffff;
+}
+
 .Rolling_Option-Mufti {
     width: 20%;
     vertical-align: top;
