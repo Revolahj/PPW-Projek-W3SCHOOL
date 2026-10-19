@@ -374,7 +374,12 @@ hr {
 .a113 {
     padding: 0 8px;
     width: 33.33333%;
-    float: left;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 .Rolling_Option-Mufti {
