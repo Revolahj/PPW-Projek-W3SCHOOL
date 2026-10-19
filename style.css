@@ -347,6 +347,36 @@ input:focus {
     border: 1px solid rgb(223, 218, 218);
     border-radius: 2px;
 
-
+}
+table.progress-akun {
+    background-color: rgb(223, 218, 218);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+table.progress-akun td{
+    padding: 5px;
+    border-bottom:1px solid black ;
+}
+.sign-in {
+    padding: 10px;
+    background-color: #04AA6D;
+    color: #ffffff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.sign-in input[type=radio] {
+    display: none;
+    cursor: pointer;
+}
+.sign-in label {
+    cursor: pointer;
 
 }
+.sign-in:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
