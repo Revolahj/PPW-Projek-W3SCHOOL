@@ -24,6 +24,7 @@ td {
 th {
     padding: 20px;
 }
+
 .top-navbar {
     position: sticky;
     top: 0;
@@ -364,6 +365,23 @@ hr {
     box-sizing: border-box;
 }
 
+.imageslidetop {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.a113 {
+    padding: 0 8px;
+    width: 33.33333%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 .Rolling_Option-Mufti {
     width: 20%;
     vertical-align: top;
@@ -564,16 +582,19 @@ input:focus {
     border-radius: 2px;
 
 }
+
 table.progress-akun {
     background-color: rgb(223, 218, 218);
     padding: 5px;
     border-radius: 5px;
-    
+
 }
-table.progress-akun td{
+
+table.progress-akun td {
     padding: 5px;
-    border-bottom:1px solid black ;
+    border-bottom: 1px solid black;
 }
+
 .sign-in {
     padding: 10px;
     background-color: #04AA6D;
@@ -583,42 +604,51 @@ table.progress-akun td{
     transition: 0.3s;
     border-radius: 5px;
 }
+
 .sign-in input[type=radio] {
     display: none;
     cursor: pointer;
 }
+
 .sign-in label {
     cursor: pointer;
 
 }
+
 .sign-in:hover {
     cursor: pointer;
     transform: translateY(-4px);
 }
+
 .LFIN {
     display: flex;
     background-color: #ddd;
     padding: 2px;
 }
+
 .LFIN-btn {
     padding: 10px;
     background-color: gray;
     cursor: pointer;
-    
+
 }
+
 .LFIN-btn input[type="radio"] {
     display: none;
     cursor: pointer;
 }
+
 .LFIN-btn:hover {
     background-color: #2196F3;
     cursor: pointer;
 }
+
 /* Wadah pembungkus flex tanpa jarak */
 .LFIN-write-group {
     margin-left: auto;
     display: flex;
-    gap: 0; /* Memastikan tidak ada jeda di antara kedua input */
+    gap: 0;
+    /* Memastikan tidak ada jeda di antara kedua input */
 }
 
 /* Style dasar untuk kedua input */
@@ -637,7 +667,8 @@ table.progress-akun td{
 
 /* Input Kanan (Password): Hilangkan garis border kiri & lengkungan di sudut kiri */
 .LFIN-write-group .input-right {
-    border-left: none; /* Biar bordernya enggak dobel/tebal di tengah */
+    border-left: none;
+    /* Biar bordernya enggak dobel/tebal di tengah */
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -645,11 +676,14 @@ table.progress-akun td{
 /* Efek saat diklik (Focus) agar border warna biru keluar dengan rapi */
 .LFIN-write-group input:focus {
     border-color: #2196F3;
-    z-index: 1; /* Supaya border focus tidak tertutup input sebelahnya */
+    z-index: 1;
+    /* Supaya border focus tidak tertutup input sebelahnya */
 }
+
 .LFIN-btn-login {
     margin-left: auto;
 }
+
 .LFIN-write-group {
     display: flex;
     gap: 0;
@@ -661,11 +695,14 @@ table.progress-akun td{
 .LFIN-write-group input,
 .LFIN-write-group button {
     padding: 10px;
-    font-size: 14px;          /* Disamakan font-size-nya */
+    font-size: 14px;
+    /* Disamakan font-size-nya */
     box-sizing: border-box;
     outline: none;
-    border: 1px solid black;  /* Menyamakan border biar gak selisih 1-2px */
-    height: 40px;             /* Kunci tinggi yang sama persis */
+    border: 1px solid black;
+    /* Menyamakan border biar gak selisih 1-2px */
+    height: 40px;
+    /* Kunci tinggi yang sama persis */
 }
 
 /* 2. Khusus atribut tombol */
@@ -673,81 +710,99 @@ table.progress-akun td{
     background-color: gray;
     color: white;
     cursor: pointer;
-    border-left: none;        /* Biar garis border-nya gak dobel sama input password */
+    border-left: none;
+    /* Biar garis border-nya gak dobel sama input password */
 }
 
 /* 3. Efek Hover Tombol */
 .LFIN-write-group button:hover {
     background-color: green;
 }
+
 .FN {
     text-align: left;
-    
+
     display: flex;
     gap: 10px;
     display: inline-flex;
-    align-items: center;     /* Tengah secara vertikal */
+    align-items: center;
+    /* Tengah secara vertikal */
     justify-content: center;
 }
-.FN-BTN{
+
+.FN-BTN {
     background-color: black;
     padding: 10px;
-    
-    
+
+
 }
+
 .FN-BTN input[type="radio"] {
     display: none;
 }
+
 .FN-BTN label {
     cursor: pointer;
     padding: 20px;
 }
+
 .FN-BTN:hover {
     background-color: white;
     color: black;
 }
+
 .RTN {
     background-color: black;
     display: flex;
 }
+
 .RTN-BTN {
     background-color: black;
     padding: 20px;
     cursor: pointer;
     font-size: 20px;
 }
+
 .RTN-BTN input[type="radio"] {
     display: none;
     cursor: pointer;
 }
+
 .RTN-BTN label {
     cursor: pointer;
 }
+
 .RTN-BTN:hover {
     background-color: white;
     color: black;
 }
+
 .TN {
     background-color: black;
     display: flex;
 }
+
 .TN-BTN {
     background-color: black;
     padding: 20px;
     cursor: pointer;
     font-size: 20px;
 }
+
 .TN-BTN input[type="radio"] {
     display: none;
     cursor: pointer;
 }
+
 .TN-BTN label {
     cursor: pointer;
 }
+
 .TN-BTN:hover {
     background-color: white;
     color: black;
 }
+
 .OB {
     display: flex;
     gap: 10px;
@@ -755,7 +810,8 @@ table.progress-akun td{
 
 /* ================= TOMBOL HIJAU ================= */
 .OB-BTN-GRN {
-    padding: 10px 20px;       /* Padding cukup di tombolnya saja */
+    padding: 10px 20px;
+    /* Padding cukup di tombolnya saja */
     color: green;
     border: 1px solid green;
     cursor: pointer;
@@ -768,7 +824,8 @@ table.progress-akun td{
 
 .OB-BTN-GRN label {
     font-size: 20px;
-    cursor: pointer;          /* Hapus padding 20px di sini biar gak numpuk */
+    cursor: pointer;
+    /* Hapus padding 20px di sini biar gak numpuk */
 }
 
 .OB-BTN-GRN:hover {
@@ -779,8 +836,10 @@ table.progress-akun td{
 /* ================= TOMBOL BIRU ================= */
 .OB-BTN-BLUE {
     padding: 10px 20px;
-    color: #2196F3;           /* Benerin warna teks jadi biru */
-    border: 1px solid #2196F3;/* Benerin border jadi biru */
+    color: #2196F3;
+    /* Benerin warna teks jadi biru */
+    border: 1px solid #2196F3;
+    /* Benerin border jadi biru */
     cursor: pointer;
     transition: 0.3s;
 }
@@ -795,25 +854,30 @@ table.progress-akun td{
 }
 
 .OB-BTN-BLUE:hover {
-    background-color: #2196F3;/* Benerin hover jadi biru */
+    background-color: #2196F3;
+    /* Benerin hover jadi biru */
     color: white;
 }
+
 .OB-BTN-YELLOW {
     padding: 20px;
     color: orange;
     cursor: pointer;
     border: 1px solid orange;
 }
-.OB-BTN-YELLOW input[type="radio"]{
+
+.OB-BTN-YELLOW input[type="radio"] {
     display: none;
     cursor: pointer;
 }
-.OB-BTN-YELLOW label{
+
+.OB-BTN-YELLOW label {
     padding: 20px;
     font-size: 20px;
     cursor: pointer;
 }
-.OB-BTN-YELLOW:hover{
+
+.OB-BTN-YELLOW:hover {
     background-color: orange;
     color: white;
 }
@@ -825,16 +889,19 @@ table.progress-akun td{
     cursor: pointer;
     border: 1px solid red;
 }
-.OB-BTN-RED input[type="radio"]{
+
+.OB-BTN-RED input[type="radio"] {
     display: none;
     cursor: pointer;
 }
-.OB-BTN-RED label{
+
+.OB-BTN-RED label {
     padding: 20px;
     font-size: 20px;
     cursor: pointer;
 }
-.OB-BTN-RED:hover{
+
+.OB-BTN-RED:hover {
     background-color: red;
     color: white;
 }
@@ -846,19 +913,23 @@ table.progress-akun td{
     cursor: pointer;
     border: 1px solid gray;
 }
-.OB-BTN-DFT input[type="radio"]{
+
+.OB-BTN-DFT input[type="radio"] {
     display: none;
     cursor: pointer;
 }
-.OB-BTN-DFT label{
+
+.OB-BTN-DFT label {
     padding: 20px;
     font-size: 20px;
     cursor: pointer;
 }
-.OB-BTN-DFT:hover{
+
+.OB-BTN-DFT:hover {
     background-color: gray;
     color: white;
 }
+
 .AB {
     display: flex;
     gap: 10px;
@@ -875,13 +946,16 @@ table.progress-akun td{
     align-items: center;
     justify-content: center;
 }
+
 .AB-BTN-GRN input[type="radio"] {
     display: none;
 }
+
 .AB-BTN-GRN label {
     font-size: 20px;
     cursor: pointer;
 }
+
 .AB-BTN-GRN:hover {
     background-color: green;
     color: white;
@@ -898,13 +972,16 @@ table.progress-akun td{
     align-items: center;
     justify-content: center;
 }
+
 .AB-BTN-BLUE input[type="radio"] {
     display: none;
 }
+
 .AB-BTN-BLUE label {
     font-size: 20px;
     cursor: pointer;
 }
+
 .AB-BTN-BLUE:hover {
     background-color: #2196F3;
     color: white;
@@ -921,13 +998,16 @@ table.progress-akun td{
     align-items: center;
     justify-content: center;
 }
+
 .AB-BTN-YELLOW input[type="radio"] {
     display: none;
 }
+
 .AB-BTN-YELLOW label {
     font-size: 20px;
     cursor: pointer;
 }
+
 .AB-BTN-YELLOW:hover {
     background-color: orange;
     color: white;
@@ -944,13 +1024,16 @@ table.progress-akun td{
     align-items: center;
     justify-content: center;
 }
+
 .AB-BTN-RED input[type="radio"] {
     display: none;
 }
+
 .AB-BTN-RED label {
     font-size: 20px;
     cursor: pointer;
 }
+
 .AB-BTN-RED:hover {
     background-color: red;
     color: white;
@@ -967,13 +1050,16 @@ table.progress-akun td{
     align-items: center;
     justify-content: center;
 }
+
 .AB-BTN-DFT input[type="radio"] {
     display: none;
 }
+
 .AB-BTN-DFT label {
     font-size: 20px;
     cursor: pointer;
 }
+
 .AB-BTN-DFT:hover {
     background-color: gray;
     color: white;
